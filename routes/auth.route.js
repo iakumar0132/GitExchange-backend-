@@ -19,7 +19,6 @@ router.get(
 );
 
 router.get("/check", (req, res) => {
-  console.log("aa rha h");
   if (req.isAuthenticated()) {
     res.send({ user: req.user });
   } else {
